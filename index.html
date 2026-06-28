@@ -902,7 +902,7 @@ ul.products li.product img{ width:100% !important; margin-left:0 !important; mar
   }
   function resize(){
     var w=canvas.clientWidth,h=canvas.clientHeight;
-    drum.scale.setScalar(window.innerWidth<=900?0.62:1.2);
+    drum.scale.setScalar(window.innerWidth<=900?0.82:1.2);
     if(canvas.width!==Math.floor(w*renderer.getPixelRatio())||canvas.height!==Math.floor(h*renderer.getPixelRatio())){
       renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();
     }
